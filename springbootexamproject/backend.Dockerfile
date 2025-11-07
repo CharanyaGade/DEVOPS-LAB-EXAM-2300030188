@@ -1,10 +1,9 @@
-
 # Stage 1: Build the app
 FROM eclipse-temurin:21-jdk AS builder
 
 WORKDIR /app
 
-COPY mvnw .
+COPY mvnw .          
 COPY .mvn/ .mvn
 
 RUN chmod +x mvnw
